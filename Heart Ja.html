@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+
+    <title>Love HTML</title>
+
+</head>
+
+<body>
+
+    <h1>I <span style="color: red;">&#10084;
+</span> You</h1>
+
+</body>
+
+</html>
+
+
+
+<!DOCTYPE html>
+
+<html>
+
+<head>
+
+    <title>Love HTML</title>
+
+    <style>
+
+        .heart {
+            width: 200px;
+
+            height: 200px;
+
+            background-color: red;
+
+            position: relative;
+
+            transform: rotate(-45deg);
+
+            margin: 200px;
+	    animation: pulse 2s infinite;
+	}
+
+        
+.heart:before,
+
+        .heart:after {
+
+            content: '';
+
+            position: absolute;
+
+            width: 200px;
+
+            height: 200px;
+
+            background-color: red;
+
+        }
+
+
+        
+    .heart:before {
+
+               border-radius: 100px 100px 0 0;
+
+               top: -100px;
+
+               left: 0;
+
+        }
+
+
+        
+.heart:after {
+
+            border-radius: 100px 100px 100px 0;
+
+            top: 0;
+
+            left: 100px;
+
+        }
+
+
+        
+.name {
+
+            color: white;
+
+            font-size: 30px;
+	    position: absolute;
+
+            top: 30%;
+
+            left: 35%;
+
+            transform: translate(-50%, -50%);
+
+        }
+
+
+        
+ @keyframes pulse {
+
+            0% {
+
+                transform: scale(1);
+
+            }
+
+            50% {
+
+                transform: scale(1.1);
+
+            }
+
+            100% {
+
+                transform: scale(1);
+
+            }
+
+        }
+
+    </style>
+
+</head>
+
+<body>
+
+    <div class="heart">
+
+        <span class="name">I love Janani</span>
+
+    </div>
+
+</body>
+
+</html>
